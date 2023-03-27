@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    background-color: white;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* HEADER */
+header {
+    width: 100%;
+    height: 100%;
+    background: url(../images/putyourbackgroundurlhere.png);
+    background-repeat: repeat-x;
+   
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#logo {
+    width: 5%;
+    float: left;
+    padding: 30px 0;
+}
+
+nav{
+    width: 60%;
+    float: right;
+   
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    padding: 30px 0 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+}
+
+nav a.active{
+    color: #31a7e5;
+    border-bottom: 5px solid #31a7e5;
+}
+
+
+
+/* slideshow */
+.container3{
+    
+    font-family: 'Roboto', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+}
+
+#destination{
+    color: black;
+    
+ 
+}
+
+h1{
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    color: #31a7e5;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Travel offers */
+
+#traveloffers {
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    float: left;
+}
+
+
+
+#traveloffers h1 {
+    color: white;
+    font-size: 50px;
+    letter-spacing: -1px;
+    float: left;
+    padding-left: 90px;
+    padding-top: 100px;
+    font-weight: bold;
+}
+
+#traveloffers h2 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+
+#traveloffers p {
+    display: inline-block;
+}
+
+#traveloffers button {
+    transition-duration: 0.4s;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+}
+#traveloffers button:hover {
+    background-color: #31a7e5;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#traveloffers a{
+    color: black;
+}
+#traveloffers a:hover {
+    color: white;
+}
+
+/*footer*/
+#footer {
+    display: table;
+    max-width: 60em;
+    padding: 1.25em;
+    margin: 0 auto;
+    background-color: white;
+    color:  black;
+    font-family: 'Roboto', sans-serif;
+ }
+
+#footer div {
+    display: table-cell;
+    width: 33.333%;
+    padding: 1em;
+    text-align: center;
+
+}
+
+#footer h2 {
+    text-align: center;
+    color: #31a7e5;
+ }
+ #footer h3 {
+    text-align: center;
+    color: #31a7e5;
+ }
+
+#footer div:nth-of-type(2) {
+    border-right: 0.062em dotted #999;
+    border-left: 0.062em dotted #999;
+ }
+ #footer div:nth-of-type(3) {
+    text-align: left;
+ }
+
+ /* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+     margin: 5px 2px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-wechat {
+    background: #09b83e;
+    color: white;
+}
+.fa-google {
+    background: #f4c20d;
+    color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+
+#pindot{
+    color: black;
+   
+}
+
+#footer a:hover {
+    color: white;
+   
+}
+
+#footer button {
+    transition-duration: 0.4s;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+}
+
+#footer button:hover {
+    background-color: #31a7e5;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/*tripstours*/
+
+.container1{
+    display: cover;
+}
+
+.textfield{
+    padding-left: 40px;
+    width: 75%;
+    margin: 10px 0;
+    color: black;
+}
+.textfield button {
+    transition-duration: 0.4s;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+}
+
+.textfield button:hover {
+    background-color: #31a7e5;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[type"text"],
+input[type"text"] {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px 
+    outline: none;
+}
+
+#containertravel{
+    margin-top: 0px;
+    margin-left: 50px;
+
+    
+}
+
+#books{
+    padding-top: 0;
+}
+
+.containerpromo{
+    align-content: center;
+    display: block;
+    float: center;
+    padding-left: 120px;
+    position: relative;
+    text-align: left;
+}
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.centered1 {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*about*/
+
+.aboutlogo {
+    display: block;
+    text-align: center;
+}
+
+.abouttext h1{
+    font-size: 40px;
+    padding-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.paragraph{
+    color: #31a7e5;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.columnmv {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.rowmv:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.mv h1{
+    font-size: 40px;
+   
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*contact*/
+.mvabout h1{
+    font-size: 40px;
+   
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.informs{
+    color: #31a7e5;
+    padding-left: 100px;
+}
+.aboutcolumnmv{
+    float: left;
+    width: 50%;
+}
+.abouttextrow:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.informscontact{
+    color: #31a7e5;
+    padding-left: auto;
+    text-align: center;
+}
+.informscontact label{
+    color: #31a7e5;
+    padding-left: auto;
+    text-align: center;
+}
+
+#id_concern{
+    padding: 20px;
+}
+
+.mvabout button{
+    transition-duration: 0.4s;
+    color: black;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+#mvabout button:hover {
+    background-color: #31a7e5;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#map{
+    padding-left: 100px;
+    
+}

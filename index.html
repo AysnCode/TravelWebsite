@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> TRAVEL AGENCY </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fotorama.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+
+	.explore{
+		padding: 5%;
+		flex: 1 1 80%;
+		min-height: 100vh;
+	}
+	
+	.exploremenu {
+	display: grid;
+	height: 100%;
+	grid-auto-rows: minmax(120px, auto) ;
+	grid-template-columns: repeat(3, 2fr)  ;
+	grid-gap: 50px;
+	
+
+	}
+	
+	.exploremenu-item {
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-weight: bold;
+
+	}
+	.exploredetails-item {
+	height: 100%;
+	grid-auto-rows: minmax(120px, auto) ;
+	grid-template-columns: repeat(3, 2fr)  ;
+	grid-gap: 50px;
+	display: inline;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: black;	
+	font-size: 25px;
+
+
+
+}
+
+.exploredetails-item.box1 {
+	display: flex-inline;
+	grid-row: auto;
+	grid-column: span 1;
+	color: #31a7e5;
+
+
+}
+
+	.exploremenu-item.box1 {
+	background-image: url(images/siargao.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+	}
+
+	.exploremenu-item.box2 {
+	background-image: url(images/palawan.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+}
+
+.exploremenu-item.box3 {
+	background-image: url(images/surigao.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+}
+
+	.exploremenu-item.box4 {
+	background-image: url(images/Chills.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+	}
+
+	.exploremenu-item.box5 {
+	background-image: url(images/bora.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+}
+
+.exploremenu-item.box6 {
+	background-image: url(images/batanes.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	color: black;
+	grid-row: span 2;
+	grid-column: span 1;
+}
+
+</style>
+</head>
+<body>
+</head>
+	
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<!--LOGO-->
+			<div id="logo">
+				<a href="index.html"> <img src="images/logo3.png" alt="" width="230px" height="50px"> </a> 
+			</div>
+
+			<!--NAVIGATION-->
+			<nav>
+				<ul>
+					<li> <a class="active" href="index.html"> HOME </a> </li>
+					<li> <a href="tripstourss.html"> TRIPS/TOURS </a> </li>
+					<li> <a href="aboutus.html"> ABOUT US </a> </li>
+					<li> <a href="contactus.html"> CONTACT US </a> </li>
+					
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+<!--slideshow-->
+<div class = "container3">
+		<section id="pics">
+			<div class="fotorama" data-height="100%" data-width="100%" data-fit="cover">
+ 				<div data-img="images/1.jpg"><br><br><em>Enjoy Your <strong>Dream Vacation!</strong></em></div>
+ 				<div data-img="images/2.jpg"><br><br><em>Travel The World with <strong>Ease and Convenience!</strong></em></div>
+  				<div data-img="images/3.jpg"><br><br><em>See the <strong>Beauty of the World!</strong></em></div>	
+			</div>
+		</div>
+
+
+<main>
+<div id="destination">
+<center><h1> Explore The World </h1></center>
+<div class="explore">
+	<a href="tripstourss.html">
+	<div class="exploremenu">
+		<div class="exploremenu-item box1"></div>
+		<div class="exploremenu-item box2"></div>
+		<div class="exploremenu-item box3"></div> 
+		<div class="exploredetails-item box1">
+			<h3>Siargao</h3>
+		</div>
+		<div class="exploredetails-item box1">
+			<h3>Palawan</h3>
+		</div>
+		<div class="exploredetails-item box1">
+			<h3>Surigao</h3>
+		</div>
+		<div class="exploremenu-item box4"></div>
+		<div class="exploremenu-item box5"></div>
+		<div class="exploremenu-item box6"></div> 
+		<div class="exploredetails-item box1">
+			<h3>Bohol</h3>
+		</div>
+		<div class="exploredetails-item box1">
+			<h3>Boracay</h3>
+		</div>
+		<div class="exploredetails-item box1">
+			<h3>Batanes</h3>
+		</div>
+	</div>
+</a>
+</div>
+</div>
+
+</main>
+
+<div id="traveloffers">
+<p>
+<h1>Make Your Dream Vacation <br><strong> Come True!</strong></h1>
+<h2 style="left: 90px; position: absolute; padding-top: 210px;"> With Huan Dao Travel Inc.</h2><br></p>
+<button style="position: absolute; left: 90px; margin-top: 290px; font-size: 20px; border-radius: 6px; padding:10px 10px;"> <a href ="tripstourss.html">See Travel Offers</a></button>
+
+</div>
+<div id="footer">
+  <div>
+    <h3>Office Contact:</h3>
+	Unit 107, Cityland Vito Cruz Tower 2, <br>
+	Pablo Ocampo Street,<br>
+	Malate, Manila<br>
+	<h3>E-mail:</h3>
+	huandao.travel@gmail.com
+	<h3>WeChat:</h3>
+	huandaotravel
+  </div>
+  <div>
+    <h2>Social Media:</h2>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-wechat"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-rss"></a>
+
+  </div>
+  <div>
+ <br>
+   <div id="logo">
+	<a href="index.html"> <img src="images/logo3.png" alt="" width="230px" height="50px" style="padding-top: 20px;"> </a> <br><br>
+	<button style="position: absolute; font-size: 20px; border-radius: 6px;padding:10px 10px;"> <a href ="tripstourss.html" id="pindot">Book Now!</a></button> <br>
+
+	</div>
+
+  </div>
+   
+ </div>
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/fotorama.js"> </script>
+</html>
+

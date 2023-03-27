@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trips/Tours</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fotorama.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+.column{
+	display: table;
+	float: left;
+	width: 75%, 25%;
+	margin-top: 0%;
+	
+}
+.left{
+	width: 75%;
+	margin-left: 5%;
+	display: table-cell;
+
+}
+.right{
+	 text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+	display: table-cell;
+	width: 25%;
+	float: left;
+	margin-top: -45%;
+	padding-left: 110%;
+}
+
+#container {
+	font-size:30px;
+	background-color: #31a7e5;
+	padding: 20px;
+	padding-top: 2px;
+	overflow: hidden;
+	position:relative;
+    display:inline-block;
+    width:100%;
+    top: -5px;
+}
+
+#selection{
+	border-color: gray;
+	color: black;
+}
+
+
+#datee{
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #31a7e5; 
+	margin-right: 30px;
+	border-radius: 3px;
+}
+#send{
+	border-color: #31a7e5;
+	font-family: 'Roboto', sans-serif;
+	background-color: #31a7e5;
+	color: white;
+	margin-right: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+}
+
+#send:hover {
+    background-color: white;
+    color: #31a7e5;
+}
+select {
+	width:200px;
+	height:24px;
+	border-color: #31a7e5;
+	font-family: 'Open Sans', sans-serif;
+	color: #31a7e5;
+	margin-right: 30px;
+	border-radius: 3px;
+}
+h5{
+	color: #31a7e5;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px; 
+	margin-bottom: 3px;
+	margin-top: 0px;
+}
+
+
+</style>
+<script>	
+window.onload = function() {	
+	// ---------------
+	// basic usage
+	// ---------------
+	var $ = new City();
+	$.showProvinces("#province");
+	$.showCities("#city");
+	// ------------------
+	// additional methods 
+	// -------------------
+	// will return all provinces 
+	console.log($.getProvinces());
+	
+	// will return all cities 
+	console.log($.getAllCities());
+	
+	// will return all cities under specific province (e.g Batangas)
+	console.log($.getCities("Batangas"));	
+	
+}
+</script>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="container">
+			<!--LOGO-->
+			<div id="logo">
+				<a href="index.html"> <img src="images/logo3.png" alt="" width="230px" height="50px"> </a> 
+			</div>
+
+			<!--NAVIGATION-->
+			<nav>
+				<ul>
+					<li> <a href="index.html"> HOME </a> </li>
+					<li> <a class="active" href="tripstourss.html"> TRIPS/TOURS </a> </li>
+					<li> <a href="aboutus.html"> ABOUT US </a> </li>
+					<li> <a href="contactus.html"> CONTACT US </a> </li>
+					
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+<div class="container1">
+	<img src="images/tours.jpg" width="100%" height="100%">
+</div>
+<div id="container">
+<center>
+<form action="/action_page.php">
+  <select id="province"></select>
+  <input type="date" id="datee">
+  <input type="submit" value="SEARCH" id="send">
+</form>
+</center>
+</div>
+
+<main>
+<div id="containertravel">
+<form id="books">
+<div class="column">	
+<div class="column left">
+<div class="textfield">
+	<h5>Booking Form</h5>
+	<label for="id_name"> Name: </label>
+	<input type="text" name="data_name" id="id_name"
+	placeholder="Enter your name" required>
+
+	</div>
+
+	<div class="textfield">
+		<label for="id_email"> Email: </label>
+		<input type="email" name="data_email" id="id_email"
+		placeholder="Enter your email" required>
+	</div>
+
+	<div class="textfield">
+		<label for="id_date"> Date: </label>
+		<input type="date" name="date">
+	</div>
+	
+	<div class="textfield">
+		<label for="id_from"> Leaving From: </label>
+		<input type="text" name="from">
+		<label for="id_to"> Going to: </label>
+		<input type="text" name="to">
+	</div>
+
+	<div class="textfield">
+		<label for="id_depart"> Departing: </label>
+		<input type="date" name="depart">
+		<label for="id_time"> Time: </label>
+		<input type="time" name="depart"><br>
+		<label for="id_return"> Returning: </label>
+		<input type="date" name="return">
+		<label for="id_time"> Time: </label>
+		<input type="time" name="depart">
+	</div>
+
+	<div class="textfield">
+		Adults (19-64):
+		<select id="selection" style="width: 40px;">
+			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option>
+  			<option value="4">4</option>
+		</select>
+		Senior (65+):
+		<select id="selection" style="width: 40px;">
+			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option>
+  			<option value="4">4</option>
+		</select>
+		Children (0-16):
+		<select id="selection" style="width: 40px;">
+			<option value="1">1</option>
+  			<option value="2">2</option>
+  			<option value="3">3</option>
+  			<option value="4">4</option>
+		</select><br>
+		<div id="logo">
+	<button style="position: absolute; font-size: 20px; border-radius: 6px;padding:10px 10px;"> <a href ="tripstourss.html" id="pindot">Book!</a></button>
+	</div>
+	<br><br>
+	<div class="column right">
+		<h5>Promos</h5>
+		<img src="images/promo.jpg" style="width: 96%; height: 100%;"><br><br>
+</div>
+</div>	
+</div>
+</form>
+</div>
+</form>
+</div>
+</main>
+
+<section>
+<div class="containerpromo">
+	<img src="images/palaws.jpg" style="width: 90%; height: 70%; margin-top: 30px; border-radius: 10px;">
+	 <div class="centered">Your Trip Our Treat! <br><strong> Explore Palawan!</strong></div>
+
+</div>
+<div class="containerpromo">
+	<img src="images/siars.jpg" style="width: 90%; height: 70%; margin-top: 30px; border-radius: 10px;">
+	 <div class="centered1">Ride the Waves of Cloud 9! <br><strong> In Siargao!</strong></div>
+	 
+</div>		
+</section>
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+	<div id="footer">
+  <div>
+    <h3>Office Contact:</h3>
+	Unit 107, Cityland Vito Cruz Tower 2, <br>
+	Pablo Ocampo Street,<br>
+	Malate, Manila<br>
+	<h3>E-mail:</h3>
+	huandao.travel@gmail.com
+	<h3>WeChat:</h3>
+	huandaotravel
+  </div>
+  <div>
+    <h2>Social Media:</h2>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-wechat"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-rss"></a>
+
+  </div>
+  <div>
+ <br>
+   <div id="logo">
+	<a href="index.html"> <img src="images/logo3.png" alt="" width="230px" height="50px" style="padding-top: 20px;"> </a> <br><br>
+	<button style="position: absolute; font-size: 20px; border-radius: 6px;padding:10px 10px;"> <a href ="tripstourss.html" id="pindot">Book Now!</a></button> <br>
+
+	</div>
+
+  </div>
+   
+ </div>
+</body>
+<script src="js/city.js"></script>
+<script src="js/combodate.js"></script> 	
+</html>
